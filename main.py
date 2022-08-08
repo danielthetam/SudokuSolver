@@ -80,6 +80,8 @@ def check_in_blacklisted(cell_coordinates):
 
 if __name__ == '__main__':
     for board_key, i in enumerate(boards):
+        blacklisted.clear()
+        solved.clear()
         board = i
         while True:
             if show_process:
